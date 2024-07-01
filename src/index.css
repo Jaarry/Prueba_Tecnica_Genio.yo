@@ -1,0 +1,261 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.notes-container {
+  transition: margin-top 0.3s ease-out;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.note-item {
+  background: #eeebeb;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.note-item.read {
+  background: #cecec6;
+}
+
+.note-content {
+  text-align: center;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.note-date {
+  font-size: 0.9em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.note-excerpt {
+  margin: 10px 0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.mark-all-read {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #1e682f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.mark-all-read:hover {
+  background-color: #4f792f ;
+}
+.mark-all-read.undo-read {
+  background-color: #FF5722;
+}
+
+.mark-all-read.undo-read:hover {
+  background-color: #E64A19;
+}
+
+
+
+/* Main Styles */
+.margin-top {
+  margin-top: 2rem;
+}
+
+.buton-main {
+  padding: 1rem;
+  background-color: #df8d4b;
+  color: #fffcfc;
+}
+
+.buton-main:hover {
+  background-color: #c17a41;
+}
+
+
+/* HEADER STYLES*/
+.header {
+  background-color: #1f1e1e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img {
+  max-width: 150px;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav ul li {
+  margin-left: 20px;
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+  color: #fffcfc;
+  font-weight: bold;
+}
+
+.header__nav ul li a:hover {
+  color: #e8ebef;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* Cambia el color del texto del botón a blanco */
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #df8d4b; /* Opcional: cambia el color del botón al hacer hover o focus */
+}
+@media (max-width: 768px) {
+  .header__nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .header__nav.open {
+    margin-top: 2rem;
+    display: flex;
+    max-height: 400px; /* Ajusta según el tamaño del menú */
+    padding-bottom: 1rem;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-open .notes-container {
+
+    margin-top: 400px; /* Ajusta según el tamaño del menú */
+    transition: margin-top 0.3s ease-out;
+  }
+
+}
+
+.list-styles {
+  font-size: 1.2rem;
+}
+
+.list-styles:hover {
+  color: #007BFF;
+}
+
+
+/* FOOTER STYLES */
+
+.footer {
+  background-color: #2f2e2e;
+  padding: 20px 0;
+  text-align: center;
+
+  z-index: 10;
+  margin-top: 40px;
+  color:#e8ebef;
+  font-size: 1.1rem;
+}
+
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  
+}
+
+.footer__links li {
+  margin-left: 20px;
+}
+
+.footer__links li a {
+  text-decoration: none;
+  color:#e8ebef;
+  font-weight: bold;
+}
+
+.footer__links li a:hover {
+  color: #df8d4b;
+}
+
+
+
+
+
