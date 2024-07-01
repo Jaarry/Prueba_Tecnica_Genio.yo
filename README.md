@@ -1,8 +1,38 @@
-# React + Vite
+# React WordPress Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta aplicación muestra las 10 últimas notas publicadas en el sitio [fernandafamiliar.soy](https://fernandafamiliar.soy) utilizando la API de WordPress y React. La aplicación permite marcar todas las notas como leídas y deshacer esta acción, con persistencia en el almacenamiento local del navegador.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Muestra las 10 últimas notas con imagen, título, fecha de publicación, fecha de modificación y extracto.
+- Permite abrir la publicación completa en una nueva ventana.
+- Permite marcar todas las notas como leídas y deshacer esta acción.
+- Persiste las notas y el estado de lectura en el almacenamiento local del navegador.
+- Diseño responsive con un botón de menú en dispositivos móviles.
+
+## Requisitos
+
+- Node.js (versión 12 o superior)
+- npm (versión 6 o superior) o yarn (versión 1.22 o superior)
+
+## Instalación
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/tu_usuario/react-wordpress-notes-app.git
+
+
+2. Dirigete a la carpeta según la ruta que seleccionaste para clonar el repositorio
+
+3. Instala las dependencias sino están instaladas localmente como: 
+    npm install
+    npm install axios
+
+4. Ejecuta el proyecto con el siguiente comando: 
+
+    npm run dev
+
+
+
+
