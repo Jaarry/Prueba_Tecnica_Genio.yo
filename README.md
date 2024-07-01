@@ -20,12 +20,13 @@ Esta aplicación muestra las 10 últimas notas publicadas en el sitio [fernandaf
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/react-wordpress-notes-app.git
+   git clone https://github.com/Jaarry/Prueba_Tecnica_Genio.yo.git
 
 
 2. Dirigete a la carpeta según la ruta que seleccionaste para clonar el repositorio
 
-3. Instala las dependencias sino están instaladas localmente como: 
+3. Instala las dependencias sino están instaladas localmente como:
+    ```bash 
     npm install
     npm install axios
 
